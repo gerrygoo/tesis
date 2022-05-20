@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+
+  <title>enredadera</title>
+
+  <meta name="description" content="Sitio web informativo sobre el proyecto Enredadera por Lucía Galván Olvera">
+  <meta name="author" content="Lucía Galván Olvera">
+
+  <link rel="stylesheet" href="./static/css/fonts.css">
+  <link rel="stylesheet" href="./static/css/styles.css">
+</head>
+
+<body>
+	<div class="video_contain">
+    <img src="./static/img/stat_h.png" class="img_h hidden">
+    <img src="./static/img/stat_v.png" class="img_v hidden">
+
+    <video playsinline class="video_h" autoplay muted loop webkit-playsinline>	
+      <source src="./static/video/enredadera_web_horiz.webm" type="video/webm">	 
+		</video>
+    <video playsinline class="video_v" autoplay muted loop webkit-playsinline>	
+      <source src="./static/video/enredadera_web_vert.webm" type="video/webm">	 
+      <source src="./static/img/stat_v.png">	 
+		</video>
+	</div>
+
+	<div class="nav">
+    <div class="link">
+      <a class="guia-h" href="./static/pdf/guia_h.pdf" target="_blank">GUIA BASICA</a>
+      <a class="guia-v" href="./static/pdf/guia_v.pdf" target="_blank">GUIA BASICA</a>
+		</div>
+    <div class="link">
+				<a href="./static/zip/imprimibles.zip">IMPRIMIBLES</a>
+		</div>
+	</div>
+
+	<script>
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
+    if (true) {
+      const vids = document.getElementsByTagName('video')
+      for (const vid of vids) vid.className = 'hidden'
+
+      const imgs = document.getElementsByTagName('img')
+      for (const img of imgs) img.className = img.className.replace('hidden', '').trim()
+    }
+	</script>
+</body>
+</html>

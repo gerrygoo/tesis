@@ -1,0 +1,14 @@
+@font-face {
+  font-family: Moderat;
+  src: url('../fonts/Moderat_Regular.otf');
+}
+
+@font-face {
+  font-family: "Moderat Medium";
+  src: url('../fonts/Moderat_Medium.otf');
+}
+
+@font-face {
+  font-family: "Moderat Bold";
+  src: url('../fonts/Moderat_Bold.otf');
+}

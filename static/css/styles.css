@@ -1,0 +1,127 @@
+html { overflow:auto; }
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  margin: 0;
+
+  font-family: "Moderat Medium";
+}
+
+/* barra de navegación */
+.nav {
+  font-size: large;
+  position: absolute;
+	top: 0;
+  width: 100%;
+	display: flex;
+}
+
+.nav .link {
+  color: white;
+  margin: 3% 1%;
+}
+
+.nav .link:nth-child(1) {
+	padding-left: 2%;
+}
+
+video {
+  background: white;
+}
+
+/* fondo video */
+.video_contain {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+	left: 0;
+	right: 0;
+  display: flex;
+
+	overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.video_v {
+  display: none;
+}
+.video_h {
+  min-height: 100%;
+}
+
+.img_v {
+  display: none;
+}
+.img_h {
+  min-height: 100%;
+}
+
+.guia-v {
+  display: none;
+}
+
+/* vertical, aspect chiquito */
+@media (max-aspect-ratio: 9/16) {
+  /* video */
+  .video_h {
+  	display: none;
+  } 
+  .video_v {
+    min-height: 100%;
+  	display: inline;
+  }
+
+  /* img */
+  .img_h {
+  	display: none;
+  } 
+  .img_v {
+    height: 100%;
+  	display: inline;
+  }
+
+  .nav {
+    font-size: x-large;
+		flex-flow: column;
+  }
+  .nav .link {
+  	padding-left: 2%;
+  }
+  .guia-v {
+    display: inline;
+  }
+	.guia-h {
+    display: none;
+	}
+}
+
+/* horizontal, aspect grande */
+@media (min-aspect-ratio: 16/9) {
+  /* video */
+  .video_h {
+    min-width: 100%;
+		display: inline;
+  }
+  .video_v {
+    display: none;
+  }
+
+	/* img */
+  .img_h {
+    min-width: 100%;
+		display: inline;
+  }
+  .img_v {
+    display: none;
+  }
+}
+
+.hidden {
+	display: none;
+}
+
