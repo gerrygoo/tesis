@@ -54,11 +54,11 @@ video {
   min-height: 100%;
 }
 
-.img_v {
+.img_h {
   display: none;
 }
-.img_h {
-  min-height: 100%;
+.img_v {
+  width: 100%;
 }
 
 .guia-v {
